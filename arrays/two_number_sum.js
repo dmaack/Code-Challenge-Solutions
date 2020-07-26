@@ -1,4 +1,5 @@
 // NOTES
+
 // array
 // write a function to find if there is a pair of numbers that add up to the target sum
 // traverse array
@@ -18,7 +19,6 @@
         // O(n) -- traversing only once and solving for y and accessing values in hash table
     // Space Complexity
         // O(n) -- we are adding values to hash table
-
 
 // -------------------------------------------------------------
 
@@ -108,3 +108,5 @@ function twoNumberSum(array, targetSum) {
 
     return []
 };
+
+
