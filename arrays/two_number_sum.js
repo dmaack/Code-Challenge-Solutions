@@ -73,7 +73,7 @@ function twoNumberSum(array, targetSum) {
         
             // if its not in our hashtable, then add it and set it to true
         } else {
-            num[num] = true
+            nums[num] = true
         }
     }
 
@@ -89,18 +89,25 @@ function twoNumberSum(array, targetSum) {
 function twoNumberSum(array, targetSum) {
 
     array.sort((a,b) => a - b);
+    // counter starting at the zero index
     let left = 0;
+    // counter starting at the end of the array
     let right = array.length - 1;
 
+    // while the left counter is less than the right
     while (left < right) {
+        // initialize variable of the sum of the two pointers
         const currentSum = array[left] + array[right];
 
+        // if the sum of x and y are the target sum, then return the numbers in an array
         if (currentSum === targetSum) {
             return [array[left], array[right]];
         } 
+        // if the sum of x and y is less than the target sum, then move the left counter ahead
         else if(currentSum < targetSum) {
             left++;
         }
+        // if the sum of x and y is greater than the target sum, then move the right counter behind
         else if (currentSum > targetSum) {
             right--;
         } 
