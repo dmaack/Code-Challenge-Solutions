@@ -2,7 +2,7 @@
 
 /* 
 
-// Big Os
+-Big Os-
 
 
 O(1) Constant - no loops
@@ -24,11 +24,27 @@ O(n!) - you are adding a loop for every element
 /*
 
 
-What can cause time in a function?
+-What can cause time in a function?-
     Operations (+, -, *, /)
     Comparisons (<, >, ==)
     Looping (for, while)
     Outside Function Call (function())
+
+-Rule Book-
+
+Rule 1: Always worst case
+Rule 2: Remove Constants
+Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b)
+    + for steps in order
+    * for nested steps
+Rule 4: Drop Non-dominant terms
+
+-What causes Space complexity?-
+
+Variables
+Data Structures
+Function Call
+Allocations
 
 
 */
